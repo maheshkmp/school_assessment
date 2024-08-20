@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from .forms import StudentForm, SummaryForm
-from .models import Summary, School, Student
+from .models import Summary, School, Student, Subject, AssessmentAreas
 
 @login_required
 def home(request):
@@ -44,3 +44,13 @@ def add_summary(request):
     else:
         form = SummaryForm()
     return render(request, 'core/add_summary.html', {'form': form})
+
+def dashboard(request):
+    context = {
+        'schools': School.objects.all(),
+        'students': Student.objects.all(),
+        'summaries': Summary.objects.all(),
+        'subjects': Subject.objects.all(),
+        'assessment_areas': AssessmentAreas.objects.all(),
+    }
+    return render(request, 'core/dashboard.html', context)
