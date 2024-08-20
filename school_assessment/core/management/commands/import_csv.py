@@ -42,15 +42,15 @@ class Command(BaseCommand):
                     correct_answer_percentage_per_class=float(row['sydney_correct_count_percentage']),
                     correct_answer=row['Correct Answers'],
                     student_id=student,
-                    participant=True,  # Assuming all entries in CSV are participants
+                    participant=True,  
                     student_score=float(row['student_score']),
                     subject_id=subject,
                     year_level_name=row['Year Level'],
                     answer_id=answers,
-                    # Note: You might need to generate or map these fields differently
-                    category_id=1,  # You'll need to determine how to set this
-                    correct_answer_id=1,  # You'll need to determine how to set this
-                    award_id=Awards.objects.first()  # This assumes you have at least one Award object
+                    
+                    category_id=1,  
+                    correct_answer_id=1,  
+                    award_id=Awards.objects.first()  
                 )
 
         self.stdout.write(self.style.SUCCESS('Data imported successfully'))
