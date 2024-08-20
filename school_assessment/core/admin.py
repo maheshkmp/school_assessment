@@ -9,3 +9,7 @@ admin.site.register(Answers)
 admin.site.register(Awards)
 admin.site.register(Subject)
 admin.site.register(Summary)
+
+
+
+
