@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dashboard</h1>
+
+    <h2>Schools</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        {% for school in schools %}
+        <tr>
+            <td>{{ school.id }}</td>
+            <td>{{ school.name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Students</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.id }}</td>
+            <td>{{ student.fullname }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Summaries</h2>
+    <table>
+        <tr>
+            <th>Student</th>
+            <th>School</th>
+            <th>Subject</th>
+            <th>Score</th>
+        </tr>
+        {% for summary in summaries %}
+        <tr>
+            <td>{{ summary.student_id.fullname }}</td>
+            <td>{{ summary.school_id.name }}</td>
+            <td>{{ summary.subject_id.subject }}</td>
+            <td>{{ summary.student_score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Subjects</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Subject</th>
+            <th>Score</th>
+        </tr>
+        {% for subject in subjects %}
+        <tr>
+            <td>{{ subject.id }}</td>
+            <td>{{ subject.subject }}</td>
+            <td>{{ subject.subject_score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Assessment Areas</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        {% for area in assessment_areas %}
+        <tr>
+            <td>{{ area.id }}</td>
+            <td>{{ area.name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

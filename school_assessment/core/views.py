@@ -45,6 +45,7 @@ def add_summary(request):
         form = SummaryForm()
     return render(request, 'core/add_summary.html', {'form': form})
 
+@login_required
 def dashboard(request):
     context = {
         'schools': School.objects.all(),
