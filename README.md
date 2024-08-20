@@ -44,7 +44,7 @@ This Django-based project manages school assessment data, including schools, stu
 ## Running the Project
 
 1. Start the development server
-python manage.py runserver
+ - python manage.py runserver
 
 2. Access the application at `http://localhost:8000`
 
@@ -56,7 +56,7 @@ To import data from a CSV file:
 
 1. Place your CSV file in a known location.
 2. Run the following command:
-   python manage.py import_csv path/to/your/csv/file.csv
+  - python manage.py import_csv path/to/your/csv/file.csv
 
 Replace `path/to/your/csv/file.csv` with the actual path to your CSV file.
 
