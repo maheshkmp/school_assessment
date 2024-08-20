@@ -14,7 +14,9 @@ This Django-based project manages school assessment data, including schools, stu
 - git clone <repository-url>
 - cd school_assessment
 
+
 2. Create a virtual environment:
+
 
 3. Activate the virtual environment:
 - On Windows:
@@ -31,12 +33,12 @@ This Django-based project manages school assessment data, including schools, stu
  - pip install -r requirements.txt
 
 
-6. Apply database migrations:
+5. Apply database migrations:
 
  - python manage.py migrate
    
 
-8. Create a superuser:
+6. Create a superuser:
    
  - python manage.py createsuperuser
 
@@ -44,6 +46,7 @@ This Django-based project manages school assessment data, including schools, stu
 ## Running the Project
 
 1. Start the development server
+ 
  - python manage.py runserver
 
 2. Access the application at `http://localhost:8000`
