@@ -23,6 +23,83 @@
     <h1>Summary List</h1>
     <table>
         <tr>
+
+            <th>school_name</th>
+            <th>year</th>
+            <th>StudentID</th>
+            <th>First_Name</th>
+            <th>Last_Name</th>
+            <th>Year_Level</th>
+            <th>Class</th>
+            <th>Subject</th>
+            <th>Answers</th>
+            <th>Correct_Answers</th>
+            <th>Question_Number</th>
+            <th>Subject_Contents</th>
+            <th>Assessment_Areas</th>
+            <th>sydney_correct_count_percentage</th>
+            <th>sydney_average_score</th>
+            <th>sydney_participants</th>
+            <th>student_score</th>
+            <th>student_total_assessed</th>
+            <th>student_area_assessed_score</th>
+            <th>total_area_assessed_score</th>
+            <th>participant</th>
+            <th>correct_answer_percentage_per_class</th>
+            <th>average_score</th>
+            <th>school_percentile</th>
+            <th>sydney_percentile</th>
+            <th>strength_status</th>
+            <th>high_distinct_count</th>
+            <th>distinct_count</th>
+            <th>credit_count</th>
+            <th>participant_count</th>
+            <th>award</th>
+        </tr>
+
+        <!--
+        {% for summary in summaries %}
+        <tr>
+            <td>{{ summary.student_id.fullname }}</td>
+            <td>{{ summary.school_id.name }}</td>
+            <td>{{ summary.subject_id.subject }}</td>
+            <td>{{ summary.student_score }}</td>
+            <td>{{ summary.year_level_name }}</td> 
+            
+        </tr>
+        {% endfor %}
+        -->
+    </table>
+</body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary List</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Summary List</h1>
+    <table>
+        <tr>
             <th>Student</th>
             <th>School</th>
             <th>Subject</th>
@@ -41,3 +118,4 @@
     </table>
 </body>
 </html>
+-->

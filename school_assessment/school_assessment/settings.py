@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+
+    'import_export',
 ]
 
 MIDDLEWARE = [
@@ -82,9 +84,7 @@ DATABASES = {
     }
 }
 
-# Authentication settings
-LOGIN_REDIRECT_URL = '/'  # Redirect to the home page after login
-LOGOUT_REDIRECT_URL = '/accounts/login/'  # Redirect to the login page after logout
+
 
 
 # Password validation
