@@ -35,3 +35,32 @@ class Ganison(models.Model):
     award = models.CharField(max_length=100)
 
 
+class School(models.Model):
+    id = models.AutoField(primary_key=True)
+    school_name = models.CharField(max_length=100)
+
+class Class(models.Model):
+    id = models.AutoField(primary_key=True)
+    class_name = models.CharField(max_length=100)
+
+class AssessmentAreas(models.Model):
+    id = models.AutoField(primary_key=True)
+    assessment_areas = models.CharField(max_length=100)
+
+class Student(models.Model):
+    id = models.AutoField(primary_key=True)
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    
+class Answers(models.Model):
+    id = models.AutoField(primary_key=True)
+    answers = models.CharField(max_length=100)
+
+class Awards(models.Model):
+    id = models.AutoField(primary_key=True)
+    award = models.CharField(max_length=100)
+
+class Subject(models.Model):
+    id = models.AutoField(primary_key=True)
+    subject = models.CharField(max_length=100)
+    subject_contents = models.CharField(max_length=100)
