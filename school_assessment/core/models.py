@@ -5,7 +5,7 @@ class Ganison(models.Model):
     school_name = models.CharField(max_length=100)
     year = models.IntegerField()
     student_id = models.IntegerField()
-    first_name = models.CharField(max_length=200)
+    first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     year_level = models.CharField(max_length=100)
     class_name = models.CharField(max_length=100)
